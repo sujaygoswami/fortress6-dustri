@@ -1,0 +1,220 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace regext=Dustri\Manuscripts\ViewHelpers}
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <main class="full-height">
+<!--- upload form --->
+<f:if condition="{content}">
+  <f:then>
+    {content}
+  </f:then>
+  <f:else>
+ 
+  <div class="table-wrap" id="upload_form">
+                    <div class="table-cell middle-line">
+                        <div class="container-fluid px-4">
+                            <h2 class="mt-4 primary-text-color element-gap-normal">Assign Manuscript to reviewer</h2>
+                         
+                            <!-- dashboard featured item -->
+                            <div class="dashboard-featured-item clearfix element-gap-normal">
+                                <div class="row justify-content-md-center">
+                                    <div class="col col-md-12">
+
+                                        <!-- group -->
+                                        <div class="card element-gap-normal">
+                                            <div class="card-body">
+                                                <!-- div class site form module -->
+                                                <div class="site-form-module registration-form">
+
+
+                                                   <!-- field -->
+                                                    <!-- field -->
+                                                    <div class="site-form-field mb-3">
+                                                        <label class="form-label"><strong>Manuscript Id</strong></label>
+                                                        <div class="input-group">
+                                                            {menuscriptdetail.manuscriptId} - {menuscriptdetail.versionNumber}
+                                                           
+                                                        </div>
+                                                            
+                                                    </div>
+                                                    <!-- field -->
+                                                  
+                                             
+                                                    <!-- field -->
+                                                    <div class="site-form-field mb-3">
+                                                        <label class="form-label"><strong>Manuscript Title</strong></label>
+                                                        <div class="input-group">
+                                                            {menuscriptdetail.title}
+                                                        </div>
+                                                      
+                                                    </div>
+                                                    <!-- field -->
+                                                
+                                                   
+
+                                                     <!-- field -->
+                                                    <div class="site-form-field mb-3">
+                                                        <label class="form-label"><strong>Assign Reviewers: </strong></label>
+                                                         
+                                                    </div>
+
+                                                    <f:form action="assignreviewers" controller="Editor" name=""  enctype="multipart/form-data">
+                                                        <input  type="hidden"  name="tx_manuscripts_meditor[uid]"value="{menuscriptdetail.uid}">
+                                                        <input  type="hidden"  name="tx_manuscripts_meditor[search]"value="1">
+                                                        
+                                                        <div class="site-form-field">
+                                                        <div id="selectionfilter">
+                                                            <div class="site-form-field mb-3">
+                                                                <div class="input-group">
+                                                                    <strong>Checked:</strong>&nbsp;
+                                                                    <input type="radio" name="tx_manuscripts_meditor[show_users]"  value="2"  <f:if condition="{show_users} == 2"> checked </f:if> data-uid="2" class="showSpecialityRadio"> Show Speciality With Users&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <input type="radio" name="tx_manuscripts_meditor[show_users]" value="1" <f:if condition="{show_users} == 1"> checked </f:if>   data-uid="1" class="showSpecialityRadio"> Show All Users &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <input type="radio" name="tx_manuscripts_meditor[show_users]" value="3" <f:if condition="{show_users} == 3"> checked </f:if>  data-uid="3" class="showSpecialityRadio"> Search User &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                </div>
+                                                            </div>
+
+    <div class="site-form-field mb-3 reviewer-filter  hide-reviewer-filter reviewer-filter-2">
+
+    <div class="frombox">        
+    <div style="float:left;"><strong>Checked Speciality:&nbsp;&nbsp;</strong></div>        
+    <div id="all_speciality">
+
+    <f:for each="{specialities}" key="key" as="specialitie">
+    <div class="form-check form-check-inline">
+    <div class="custom-check-main-wrap">  
+    <div class="table-wrap">
+    <div class="table-cell middle-line">  
+    <input class="form-check-input" type="checkbox"  name="tx_manuscripts_meditor[speciality][]"  <regext:arrayck  qval='{specialitie.uid}'  darray='{speciality}' roption='checked' />   value="{specialitie.uid}" >
+    <div class="clone"></div>
+    <label class="form-check-label">
+    {specialitie.speciality}
+    </label>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </f:for>
+
+
+    </div>
+    </div>	
+    </div>
+                                                           
+<!-- field -->
+<div class="site-form-field mb-3 reviewer-filter hide-reviewer-filter reviewer-filter-3">
+    <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-lg fa-search"></i></span>
+        <input type="text" class="form-control" name="tx_manuscripts_meditor[searchvalue]" value="{searchvalue}" placeholder="Name" aria-label="searchvalue">
+        
+    </div>
+</div>
+<!-- field -->
+<div class="site-form-field mb-3 reviewer-filter hide-reviewer-filter reviewer-filter-1 reviewer-filter-3">
+<strong>Sort By: &nbsp;&nbsp;</strong>
+<select name="tx_manuscripts_meditor[sortBy]" >
+    <option value="maxReview" <f:if condition="{sortBy} == 'maxReview'"> selected </f:if> >Max Review</options>
+    <option value="last_name" <f:if condition="{sortBy} == 'last_name'"> selected </f:if> >Alphabetical Order</options>
+</select>
+</div>
+
+
+<!-- field -->
+<div class="site-form-field reviewer-filter hide-reviewer-filter reviewer-filter-1 reviewer-filter-2 reviewer-filter-3">
+<button class="btn btn-primary" type="submit">Get List</button>
+</div>
+<!-- field -->   
+                                                     
+                                                    
+                                                    </div>
+
+                                                        </div>
+                                                    </f:form>
+
+                                            <f:if condition="{show_reviewers}">
+                                                    <f:if condition="{reviewers}">
+                                                        <f:then>
+                                                    <f:form action="assignreviewers" controller="Editor" name=""  enctype="multipart/form-data">
+                                                        <input  type="hidden"  name="tx_manuscripts_meditor[uid]"value="{menuscriptdetail.uid}">
+                                                         <input  type="hidden"  name="tx_manuscripts_meditor[type]"value="assign_reviewer_submit">
+                                                        <div class="site-form-field custom-multi-check-holder mb-3">
+                                                                <f:for each="{reviewers}" key="key" as="reviewers">
+                                                                    <div class="form-check form-check-inline">
+                                                                        <div class="custom-check-main-wrap">  
+                                                                            <div class="table-wrap">
+                                                                            <div class="table-cell middle-line">  
+                                                                            <input class="form-check-input" type="checkbox" id="" name="tx_manuscripts_meditor[reviewers_assign][]"value="{reviewers.uid}"  <f:if condition="{reviewers.section_disable}">checked disabled="disabled"</f:if>>
+                                                                            <div class="clone"></div>
+                                                                            <label class="form-check-label" <f:if condition="{reviewers.section_color}">style="color:{reviewers.section_color};"</f:if>>
+                                                                                <p class="#FFFF99">
+                                                                            {reviewers.last_name}, {reviewers.first_name} [{reviewers.username}] <f:if condition="{reviewers.section_message}">({reviewers.section_message})</f:if>
+                                                                            </p>
+                                                                            </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    </div>
+                                                                </f:for>
+                                                        </div>
+
+
+
+                                                </div>
+                                                <!-- div class site form module -->
+                                            </div>
+                                        </div>
+                                        <!-- group -->
+
+
+                                                  <div class="row">
+
+                                                    <!-- field -->
+                                                    <div class="site-form-field col-md-6 mb-3">
+                                                        <input type="reset" class="btn btn-primary" value="Reset">
+                                                    </div>
+                                                    <!-- field-->
+                                                    <div class="site-form-field col-md-6  pull-text-right mb-3">
+                                                        <button type="submit" class="btn btn-primary" >Assign Reviewers</button>
+                                                    </div>
+
+                                                    </div>
+
+                                                </f:form>
+                                            </f:then>
+                                            <f:else>
+                                            <p class="text-center"> No Data Found</p>
+                                            </f:else>
+                                        </f:if>
+                                    </f:if>
+   
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- dashboard featured item -->
+
+                        </div>
+                    </div>
+                </div>
+
+</f:else>
+</f:if>
+</main>
+
+
+</f:section>
+</html>
