@@ -345,7 +345,9 @@
   max-width: inherit !important;
   top: 100%;
   width: 500px;
-  left: 0px;
+  left: inherit;
+  right: -10px;
+  z-index: 10000;
 }
 
 
@@ -419,6 +421,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  border-radius: 4px;
 }
 
 .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td i,
@@ -569,4 +572,10 @@
   .dustri-admin-look .site-data-table>.table>thead>tr:nth-child(odd)>td.begining-color-line span {
     left: 1px;
   } */
+}
+
+
+
+.dustri-admin-look .site-data-table thead tr th a{
+  text-decoration: none;
 }
