@@ -585,4 +585,30 @@
 .dustri-admin-look footer{
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
+
+.dustri-admin-look .form-control,
+.dustri-admin-look .dataTable-input {
+  filter: grayscale(100%) brightness(110%);
+  border-color: black;
+}
+.dustri-admin-look .input-group-text{
+  border-color: black;
+}
+.dustri-admin-look .sb-sidenav .sb-sidenav-menu .nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.dustri-admin-look .sb-sidenav .sb-sidenav-menu .nav ul li{
+  margin: 0px;
+  padding: 0px;
+}
+.dustri-admin-look.sb-nav-fixed .sb-topnav h1{
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+.dustri-admin-look .sb-topnav #navbarDropdown{
+  cursor: pointer;
+}
 /* wcag */
