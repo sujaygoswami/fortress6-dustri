@@ -503,10 +503,14 @@
     left: -9999px;
   }
 
-  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>th,
-  .dustri-admin-look .site-data-table>.table>thead>tr>th {
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>th {
     display: block;
     background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .dustri-admin-look .site-data-table>.table>thead>tr>th{
+    display: block;
     box-shadow: none !important;
   }
 
