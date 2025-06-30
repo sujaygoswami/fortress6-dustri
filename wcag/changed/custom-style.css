@@ -505,7 +505,7 @@
 
   .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>th {
     display: block;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     box-shadow: none !important;
   }
 
