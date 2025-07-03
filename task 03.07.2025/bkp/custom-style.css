@@ -1,0 +1,618 @@
+.dustri-admin-look {
+  /* basic */
+  --bs-gutter-x: 1.5rem;
+  /* basic */
+  /* side nav */
+  /* side nav */
+  /* site-data-table */
+  /* site-data-table */
+  /* header */
+  /* header */
+  /* dashboard-quick-link-module */
+  /* dashboard-quick-link-module */
+  /* manuscript-detail-table */
+  /* manuscript-detail-table */
+  /* accordion */
+  /* accordion */
+  /* site form */
+  /* site form */
+  /* manuscript submission */
+  /* manuscript submission */
+}
+
+.dustri-admin-look .clear {
+  clear: both;
+}
+
+.dustri-admin-look b,
+.dustri-admin-look strong {
+  font-weight: 600;
+}
+
+.dustri-admin-look .text-success {
+  color: var(--bs-green);
+}
+
+.dustri-admin-look .text-danger {
+  color: var(--bs-red);
+}
+
+.dustri-admin-look .disable-mouse-event {
+  pointer-events: none;
+}
+
+.dustri-admin-look .block-btn {
+  display: block;
+}
+
+.dustri-admin-look .block-btn.btn-width-type-one {
+  min-width: 120px;
+  text-align: center;
+}
+
+.dustri-admin-look .pull-text-right {
+  text-align: right;
+}
+
+.dustri-admin-look .primary-text-color {
+  color: var(--bs-primary);
+}
+
+.dustri-admin-look .element-gap-tiny {
+  margin-bottom: 10px;
+}
+
+.dustri-admin-look .element-gap-normal {
+  margin-bottom: var(--bs-gutter-x);
+}
+
+.dustri-admin-look .card.with-no-border {
+  border: 0px;
+}
+
+.dustri-admin-look h1,
+.dustri-admin-look h2,
+.dustri-admin-look h3,
+.dustri-admin-look h4,
+.dustri-admin-look h4,
+.dustri-admin-look h6 {
+  color: var(--bs-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dustri-admin-look h1.card-header,
+.dustri-admin-look h2.card-header,
+.dustri-admin-look h3.card-header,
+.dustri-admin-look h4.card-header,
+.dustri-admin-look h4.card-header,
+.dustri-admin-look h6.card-header {
+  margin: 0px;
+}
+
+.dustri-admin-look .card-spcl-link {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: white;
+  color: var(--bs-primary);
+  list-style: normal;
+  border-radius: 3px;
+}
+
+.dustri-admin-look .card-spcl-link a {
+  text-decoration: none;
+}
+
+.dustri-admin-look .element-bg-primary {
+  background-color: var(--bs-primary);
+}
+
+.dustri-admin-look .color-light {
+  color: white;
+}
+
+.dustri-admin-look .color-light * {
+  color: white;
+}
+
+.dustri-admin-look .color-primary-imp {
+  color: var(--bs-primary) !important;
+}
+
+.dustri-admin-look .color-primary-imp a {
+  color: var(--bs-primary) !important;
+}
+
+.dustri-admin-look .full-height {
+  height: 100%;
+}
+
+.dustri-admin-look .pull-text-center {
+  text-align: center;
+}
+
+.dustri-admin-look #layoutSidenav_nav>.sb-sidenav>.sb-sidenav-menu>.nav {
+  padding: 20px 0;
+}
+
+.dustri-admin-look .sb-sidenav .sb-sidenav-menu .nav+.side-image img {
+  width: 100%;
+  height: auto;
+}
+
+.dustri-admin-look .site-data-table .table-primary thead tr th {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+.dustri-admin-look .site-data-table .begining-color-line {
+  position: relative;
+  padding-left: 10px;
+}
+
+.dustri-admin-look .site-data-table .begining-color-line span {
+  width: 5px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+
+.dustri-admin-look .site-data-table td {
+  min-width: 100px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.dustri-admin-look .site-data-table td.small_td {
+  min-width: 30px;
+}
+
+.dustri-admin-look .site-data-table td.small_td td {
+  min-width: 30px;
+}
+
+.dustri-admin-look .site-data-table .btn {
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+.dustri-admin-look .site-data-table .status-badge {
+  width: 70px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.dustri-admin-look .sb-topnav.navbar-light #sidebarToggle {
+  border: 1px solid #ccc;
+}
+
+.dustri-admin-look .sb-sidenav-primary {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+.dustri-admin-look .sb-sidenav-primary * {
+  color: white;
+}
+
+.dustri-admin-look .navbar-brand img {
+  width: 180px;
+  height: auto;
+}
+
+.dustri-admin-look .site-sub-name {
+  font-weight: 500;
+}
+
+.dustri-admin-look .dashboard-quick-link-module .card-iconic {
+  margin-bottom: 20px;
+}
+
+.dustri-admin-look .table-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  table-layout: fixed;
+  background: transparent;
+}
+
+.dustri-admin-look .table-wrap .table-cell {
+  display: table-cell;
+}
+
+.dustri-admin-look .table-wrap .table-cell.bottom-line {
+  vertical-align: bottom;
+}
+
+.dustri-admin-look .table-wrap .table-cell.top-line {
+  vertical-align: top;
+}
+
+.dustri-admin-look .table-wrap .table-cell.middle-line {
+  vertical-align: middle;
+}
+
+.dustri-admin-look .manuscript-detail-table table {
+  border: none;
+}
+
+.dustri-admin-look .manuscript-detail-table table td,
+.dustri-admin-look .manuscript-detail-table table th,
+.dustri-admin-look .manuscript-detail-table table tr {
+  border: none;
+}
+
+.dustri-admin-look .manuscript-detail-table td:first-child,
+.dustri-admin-look .manuscript-detail-table th:first-child {
+  width: 30%;
+}
+
+.dustri-admin-look .manuscript-detail-table td:last-child,
+.dustri-admin-look .manuscript-detail-table th:last-child {
+  width: 70%;
+}
+
+.dustri-admin-look .manuscript-detail-table td a,
+.dustri-admin-look .manuscript-detail-table th a {
+  text-decoration: none;
+}
+
+.dustri-admin-look .accordion-item .accordion-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.dustri-admin-look .site-form-module .form-check.error-field .alert {
+  display: none;
+}
+
+.dustri-admin-look .site-form-module .form-check.error-field input {
+  color: red;
+  border-color: red;
+  background-color: #fad6d6;
+}
+
+.dustri-admin-look .site-form-module .input-group .alert {
+  display: none;
+}
+
+.dustri-admin-look .site-form-module .input-group.error-field input,
+.dustri-admin-look .site-form-module .input-group.error-field textarea,
+.dustri-admin-look .site-form-module .input-group.error-field .input-group-text,
+.dustri-admin-look .site-form-module .input-group.error-field .form-select,
+.dustri-admin-look .site-form-module .input-group.error-field input[type=checkbox],
+.dustri-admin-look .site-form-module .input-group.error-field input[type=radio] {
+  color: red;
+  border-color: red;
+  background-color: #fad6d6;
+}
+
+.dustri-admin-look .site-form-module .input-group.error-field input::placeholder,
+.dustri-admin-look .site-form-module .input-group.error-field textarea::placeholder,
+.dustri-admin-look .site-form-module .input-group.error-field .input-group-text::placeholder,
+.dustri-admin-look .site-form-module .input-group.error-field .form-select::placeholder,
+.dustri-admin-look .site-form-module .input-group.error-field input[type=checkbox]::placeholder,
+.dustri-admin-look .site-form-module .input-group.error-field input[type=radio]::placeholder {
+  color: red;
+}
+
+.dustri-admin-look .site-form-module .input-group.error-field .input-group-text,
+.dustri-admin-look .site-form-module .input-group.error-field input[type=checkbox],
+.dustri-admin-look .site-form-module .input-group.error-field input[type=radio] {
+  background-color: #fad6d6;
+}
+
+.dustri-admin-look .more-additional-file-row {
+  display: none;
+}
+
+.dustri-admin-look .custom-multi-check-holder {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check.dropdown .dropdown-toggle:after {
+  display: none;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check.dropdown .dropdown-toggle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap .status-mark{
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px 0 0 4px;
+  z-index: 5;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check.dropdown .dropdown-menu{
+  max-width: inherit !important;
+  top: 100%;
+  width: 500px;
+  left: inherit;
+  right: -10px;
+  z-index: 10000;
+}
+
+
+@media screen and (max-width: 767px) {
+  .dustri-admin-look .custom-multi-check-holder>.form-check.dropdown .dropdown-menu{
+    width: 250px;
+  }
+}
+
+
+.dustri-admin-look .custom-multi-check-holder>.form-check {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 0 10px 0;
+  float: left;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .table-wrap {
+  table-layout: auto;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap {
+  padding: 5px 5px 5px 12px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--bs-primary);
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap label {
+  display: block;
+  text-align: center;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap label p {
+  margin: 0px;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap input:checked+.clone {
+  background-color: var(--bs-primary);
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap input:checked+.clone+label {
+  color: white;
+}
+
+.dustri-admin-look .custom-multi-check-holder>.form-check .custom-check-main-wrap .clone {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+}
+
+.dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td i,
+.dustri-admin-look .site-data-table>.table>tbody>tr>td i {
+  display: none;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 1650px) {
+
+  .dustri-admin-look .site-data-table>.pagination+.table,
+  .dustri-admin-look .site-data-table>.table {
+    display: block;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 35%;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td .btn,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td .btn {
+    min-width: inherit !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td .btn+br,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td .btn+br {
+    display: none;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td .btn.block-btn,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td .btn.block-btn {
+    display: inline-block;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td.begining-color-line,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td.begining-color-line {
+    padding-left: 25%;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td i,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td i {
+    display: block;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td:before,
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td i,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td:before,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td i {
+    position: absolute;
+    left: 8px;
+    width: 30%;
+    padding-right: 0px;
+    font-weight: bold;
+  }
+
+  .dustri-admin-look .site-data-table .btn{
+    position: relative;
+    z-index: 1;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>thead,
+  .dustri-admin-look .site-data-table>.table>thead {
+    display: block;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr,
+  .dustri-admin-look .site-data-table>.table>thead>tr {
+    display: block;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>th {
+    display: block;
+    /* background-color: transparent !important; */
+    box-shadow: none !important;
+  }
+
+  .dustri-admin-look .site-data-table>.table>thead>tr>th{
+    display: block;
+    box-shadow: none !important;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody,
+  .dustri-admin-look .site-data-table>.table>tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr,
+  .dustri-admin-look .site-data-table>.table>tbody>tr {
+    flex-grow: 1;
+    width: 49%;
+    border: none !important;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td {
+    display: block;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr,
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr,
+  .dustri-admin-look .site-data-table>.table>tbody>tr,
+  .dustri-admin-look .site-data-table>.table>thead>tr {
+    margin: 0 0 1rem 0;
+    background-color: #eee;
+    margin-left: 0rem;
+    margin-right: 0px;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td:first-child,
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>th:first-child,
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>td:first-child,
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>th:first-child,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td:first-child,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>th:first-child,
+  .dustri-admin-look .site-data-table>.table>thead>tr>td:first-child,
+  .dustri-admin-look .site-data-table>.table>thead>tr>th:first-child {
+    font-weight: bold;
+    background-color: var(--bs-primary) !important;
+    color: white;
+    font-size: 16px;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.table>tbody>tr>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.table>thead>tr>td.begining-color-line span {
+    left: 0px;
+  }
+
+  .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr:nth-child(odd),
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr:nth-child(odd),
+  .dustri-admin-look .site-data-table>.table>tbody>tr:nth-child(odd),
+  .dustri-admin-look .site-data-table>.table>thead>tr:nth-child(odd) {
+    margin-right: 1rem;
+  }
+
+  /* .dustri-admin-look .site-data-table>.pagination+.table>tbody>tr:nth-child(odd)>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.pagination+.table>thead>tr:nth-child(odd)>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.table>tbody>tr:nth-child(odd)>td.begining-color-line span,
+  .dustri-admin-look .site-data-table>.table>thead>tr:nth-child(odd)>td.begining-color-line span {
+    left: 1px;
+  } */
+}
+
+
+
+.dustri-admin-look .site-data-table thead tr th a{
+  text-decoration: none;
+}
+
+
+/* wcag */
+.dustri-admin-look footer{
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.dustri-admin-look .form-control,
+.dustri-admin-look .dataTable-input {
+  filter: grayscale(100%) brightness(110%);
+  border-color: black;
+}
+.dustri-admin-look .input-group-text{
+  border-color: black;
+}
+.dustri-admin-look .sb-sidenav .sb-sidenav-menu .nav ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.dustri-admin-look .sb-sidenav .sb-sidenav-menu .nav ul li{
+  margin: 0px;
+  padding: 0px;
+}
+.dustri-admin-look.sb-nav-fixed .sb-topnav h1{
+  margin: 0px;
+  padding: 0px;
+  font-size: 0px;
+}
+.dustri-admin-look .sb-topnav #navbarDropdown{
+  cursor: pointer;
+}
+/* wcag */
